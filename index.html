@@ -2,23 +2,100 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2ο Γυμνάσιο Κοζάνης</title>
     <style>
         body {
-            text-align: center;
-            font-family: Arial;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #333;
         }
-        img {
-            width: 500px;
-            margin-top: 20px;
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .buttons {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background: #1e88e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .buttons a:hover {
+            background: #1565c0;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+<header>
     <h1>2ο Γυμνάσιο Κοζάνης</h1>
+    <p>Καλώς ήρθατε στην ιστοσελίδα μας</p>
+</header>
 
-    <img src="893f0593-05d4-4048-9bc4-092fb2d37a67.jpg" alt="Σχολείο">
+<main>
+    <section class="intro">
+        <p>Αυτή είναι μια απλή ιστοσελίδα με εικόνες, κουμπιά και σωστή εμφάνιση σε κινητό και υπολογιστή.</p>
+    </section>
+
+    <!-- ΓΚΑΛΕΡΙ ΕΙΚΟΝΩΝ -->
+    <section class="gallery">
+        <img src="image1.jpg" alt="Εικόνα 1">
+        <img src="893f0593-05d4-4048-9bc4-092fb2d37a67.jpg" alt="Εικόνα 2">
+        <img src="image3.jpg" alt="Εικόνα 3">
+    </section>
+
+    <!-- ΚΟΥΜΠΙΑ / ΣΥΝΔΕΣΜΟΙ -->
+    <section class="buttons">
+        <a href="https://www.sch.gr" target="_blank">Υπουργείο Παιδείας</a>
+        <a href="mailto:info@example.gr">Επικοινωνία</a>
+    </section>
+</main>
+
+<footer>
+    © 2026 2ο Γυμνάσιο Κοζάνης
+</footer>
 
 </body>
 </html>
